@@ -1,0 +1,16 @@
+$(function(){  
+    // 让当前对象滚动到顶部  
+    $("#name").click(function(){  
+        setTimeout(function(){  
+            document.getElementById("name").scrollintoview();// 参数可以是true， false, 空参数  
+        }, 300);  
+    });  
+  
+    // 让当前对象上面的元素滚动到顶部，使当前对象处于比较中间的位置  
+    $("#age").click(function(){  
+        setTimeout(function(){  
+            document.getElementById("name").scrollintoview(); // 参数可以是true， false, 空参数  
+  
+        }, 300);  
+    });  
+});
